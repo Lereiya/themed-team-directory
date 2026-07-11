@@ -1,35 +1,57 @@
 # 🇰🇪 Themed Team Directory
 
-A React application that demonstrates lifting state up and Context API by creating a team directory with search functionality and theme switching.
+Hey there! 👋 This is my Week 6 React assignment - a team directory app that shows off lifting state up and Context API working together.
 
-## ✨ Features
+## What's This All About?
 
-- 🔍 **Real-time Search** - Filter team members by name, email, username, company, or city
-- 🌓 **Theme Toggle** - Switch between light and dark mode using React Context
-- 📱 **Responsive Grid** - Beautiful card layout that adapts to any screen size
-- 🇰🇪 **Kenyan Team** - Displaying 10 Kenyan team members with local names
-- 🎯 **Deep Nesting** - Theme toggle button is nested 3 levels deep, proving Context works without prop drilling
+So basically, I built this app that has two main things going on:
 
-## 🚀 Technologies Used
+1. **A search bar** that filters through team members in real-time (the search state is "lifted up" to the parent component so both the search bar and user list can share it)
 
-- React 18
-- React Context API
-- CSS3 with Grid & Flexbox
-- Vite (Build Tool)
+2. **A dark/light theme toggle** that uses React Context to change the whole app's appearance - and the toggle button is nested 3 levels deep just to prove Context works without all that prop drilling headache!
 
-## 📋 Assignment Requirements
+## The Team
 
-This project was built as a Week 6 assignment with the following requirements:
+I used Kenyan names for the team because, well, that's where I'm from! 🇰🇪 We've got:
 
-- ✅ Search state lifted up to shared parent component
-- ✅ Theme Context created and provided correctly
-- ✅ Theme toggle works from a deeply nested component (3 levels deep)
-- ✅ Theme visually affects the entire application
-- ✅ Clean code with state in the right place
+- Tracy Belinda from Nairobi
+- Joshua Baraka from Kisumu  
+- Stacy Njeri from Nakuru
+- Moraine Wanjiru from Mombasa
+- Joan Gachenia from Eldoret
+- Emma Wanjiku from Thika
+- Peter Karanja from Nairobi
+- John Tingoi from Kitale
+- David Simiyu from Bungoma
+- Moses Kirui from Kericho
 
-## 🏃‍♂️ Running the Project
+## What You Can Do
 
-### Installation
+- 🔍 **Search** - Type any name, email, city, or company and watch the list update instantly
+- 🌓 **Toggle themes** - Click the button and the whole app changes from light to dark (and back)
+- 📱 **Responsive** - Works on your phone, tablet, or desktop
+- 👀 **See team details** - Each card shows name, username, email, phone, company, and city
+
+## Tech Stack
+
+- React (obviously 😄)
+- Context API for the theme stuff
+- CSS Grid for the card layout
+- Vite for fast development
+
+## How to Run It
+
+Super simple:
 
 ```bash
+# Clone the repo
+git clone [your-repo-url]
+
+# Go into the folder
+cd themed-team-directory
+
+# Install dependencies
 npm install
+
+# Start the dev server
+npm run dev
